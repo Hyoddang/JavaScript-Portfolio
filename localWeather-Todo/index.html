@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List & Location Time</title>
+  <script src="https://kit.fontawesome.com/1ccb0a2168.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="wrap">
+    <div class="todo-wrap">
+      <form class="todo-input-form">
+        <i class="fa-solid fa-arrow-right">
+        <input type="text" placeholder="Typing your plan" class="todo-value" required autofocus></i>
+        <button class="submit-todo"><i class="fa-solid fa-pen-to-square"></i></button>
+      </form>
+      <div class="todoList">
+        <ul class="todoList-wrap">
+          
+        </ul>
+      </div>
+    </div>
+    <div class="location-time">
+      <div class="location-one">
+        <select name="country" class="select-locate select-first-locate">
+          <option value="seoul">서울</option>
+          <option value="NY">뉴욕</option>
+          <option value="tokyo">도쿄</option>
+          <option value="london">런던</option>
+          <option value="moskva">모스크바</option>
+          <option value="beijing">베이징</option>
+          <option value="berlin">베를린</option>
+          <option value="sydney">시드니</option>
+          <option value="taipei">타이베이</option>
+          <option value="paris">파리</option>
+        </select>
+        <div class="weather">
+          <img class="weather-icon"></img>
+          <p class="temperature"></p>
+        </div>
+        <p class="local" id="first-local"></p>
+        <p class="month-day" id="first-locate"></p>
+        <p class="local-time first-locate"></p>
+      </div>
+<hr>
+      <div class="location-two">
+        <select name="country" class="select-locate select-second-locate">
+          <option value="NY">뉴욕</option>
+          <option value="tokyo">도쿄</option>
+          <option value="london">런던</option>
+          <option value="moskva">모스크바</option>
+          <option value="beijing">베이징</option>
+          <option value="berlin">베를린</option>
+          <option value="seoul">서울</option>
+          <option value="sydney">시드니</option>
+          <option value="taipei">타이베이</option>
+          <option value="paris">파리</option>
+        </select>
+        <div class="weather">
+          <img class="weather-icon"></img>
+          <p class="temperature"></p>
+        </div>
+        <p class="local" id="second-local"></p>
+        <p class="month-day" id="second-locate"></p>
+        <p class="local-time second-locate1"></p>
+      </div>
+<hr>
+        <div class="location-three">
+          <select name="country" class="select-locate select-third-locate">
+            <option value="paris">파리</option>
+            <option value="NY">뉴욕</option>
+            <option value="tokyo">도쿄</option>
+            <option value="london">런던</option>
+            <option value="moskva">모스크바</option>
+            <option value="beijing">베이징</option>
+            <option value="berlin">베를린</option>
+            <option value="seoul">서울</option>
+            <option value="sydney">시드니</option>
+            <option value="taipei">타이베이</option>
+          </select>
+          <div class="weather">
+            <img class="weather-icon"></img>
+            <p class="temperature"></p>
+          </div>
+          <p class="local" id="third-local"></p>
+          <p class="month-day" id="third-locate"></p>
+          <p class="local-time third-locate2"></p>
+        </div>
+      </div>
+    </div>
+  <footer>
+    <span class="wise-saying"></span>
+    <p class="wise-people"></p>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/location_time.js"></script>
+  <script src="js/location_weather.js"></script>
+  <script src="js/wise_saying.js"></script>
+  <script src="js/background.js"></script>
+</body>
+</html>
+

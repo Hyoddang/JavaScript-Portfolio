@@ -1,0 +1,266 @@
+.wrap {
+  position: relative;
+  margin: 30px auto 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+#notification {
+  font-weight: 600;
+  cursor: default;
+}
+
+/*? 리스트 영역 스타일링 */
+.notify {
+  width: 660px;
+  height: 730px;
+  margin: 20px auto 0 auto;
+  border: 2px solid black;
+  background-color: #eeeeeea6;
+}
+
+.notify-wrap {
+  display: grid;
+  margin: 10px 10px 0;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(3, 200px);
+  grid-row-gap: 27px;
+  grid-column-gap: 17px;
+}
+
+.notify-list-link {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out;
+}
+
+.notify-list-link:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.notify-list {
+  width: 200px;
+  height: 200px;
+  background-color: #ffffffa6;
+  color: black;
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+}
+
+.display-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.display-content {
+  display: -webkit-box; /* 웹킷 박스로 지정 */
+  white-space: wrap; /* 텍스트가 줄바꿈 되게끔 설정 */
+  -webkit-line-clamp: 6; /* n번째 줄까지 표시 */
+  -webkit-box-orient: vertical; /* 수직 정렬 */
+  overflow: hidden; /* 넘어가는 텍스트는 숨김 */
+  text-overflow: ellipsis; /* 텍스트가 넘어가면 ...으로 표시 */
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.remove-checkbox {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  transform: scale(1.3);
+}
+
+.hidden-check {
+  display: none;
+}
+
+/*? 추가, 삭제버튼 스타일 영역 */
+.btn-wrap {
+  display: inline;
+  position: relative;
+  top: 2%;
+  left: 87%;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #ffffff00;
+}
+
+.add-btn {
+  margin-right: 10px;
+}
+
+.remove-no {
+  transform: rotate(45deg);
+}
+
+.add-btn, .remove-btn {
+  font-size: 20px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+
+.add-btn:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.remove-btn:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+/* 모달 영역 스타일링 */
+.modal-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000007c;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-display {
+  position: absolute;
+  top: 20%;
+  left: 38%;
+  width: 460px;
+  height: 500px;
+  background-color: #eee;
+  border: 1px solid black;
+}
+
+.modal-wrap p {
+  margin: 10px 25px 0;
+  font-weight: 600;
+
+  /* 텍스트간 사이 간격 */
+  letter-spacing: 0.5px;
+}
+
+.title {
+  margin: 0 25px;
+  width: 410px;
+  height: 30px;
+}
+
+.content {
+  margin: 0 25px;
+  width: 410px;
+  height: 320px;
+}
+
+.modalBtn-wrap {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.submit-btn {
+  border: 1px solid black;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.cancel-btn {
+  border: 1px solid black;
+  border-radius: 3px;
+  margin-left: 5px;
+}
+
+/* 삭제 모달 스타일 */
+.modal-alert-display {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000007c;
+}
+
+.alert-remove {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+  height: 150px;
+  top: 38%;
+  left: 42%;
+  background-color: #eee;
+  border: 1px solid black;
+}
+
+.remove-confirm {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.modal-cancle {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-cancle:hover {
+  background-color: rgb(120, 120, 120);
+}
+
+.modal-cancle:active {
+  background-color: rgb(80, 80, 80);
+}
+
+.remove-agree, .remove-cancle {
+  border: 1px solid black;
+  border-radius: 3px;
+  color: white;
+  background-color: rgb(150, 150, 150);
+}
+
+.remove-agree {
+  margin-right: 10px;
+}
+
+.remove-agree:hover {
+  background-color: rgb(120, 120, 120);
+}
+
+.remove-agree:active {
+  background-color: rgb(80, 80, 80);
+}
+
+.remove-cancle {
+  margin-left: 10px;
+}
+
+.remove-cancle:hover {
+  background-color: rgb(110, 110, 110);
+}
+
+.remove-cancle:active {
+  background-color: rgb(80, 80, 80);
+}

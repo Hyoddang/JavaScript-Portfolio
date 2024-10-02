@@ -1,0 +1,254 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrap {
+  display: inline-flex;
+  height: 80%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.todo-wrap {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 33%;
+  height: 100%;
+  border-radius: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 12%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.fa-arrow-right {
+  font-size: 20px;
+  width: 70%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+form input {
+  position: relative;
+  background: rgba(0, 0, 0, 0);
+  margin-left: 10px;
+  outline: none;
+  border: none;
+  width: 85%;
+  height: 30px;
+  font-size: 15px;
+}
+
+button {
+  position: absolute;
+  background: rgba(0, 0, 0, 0);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  right: 16%;
+}
+
+.fa-pen-to-square:hover {
+  color: #368aac;
+}
+
+.todoList {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.todoList-wrap {
+  margin: 30px 20px 5px 35px;
+}
+
+.todo {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  width: 100%;
+  font-size: 22px;
+  padding: 0px 5px;
+  margin-top: 10px;
+}
+
+.todo-content {
+  margin-left: 15px;
+  width: 85%;
+}
+
+.todo-hidden {
+  text-decoration: line-through;
+  color: #858585;
+}
+
+.todo input {
+  transform: scale(1.3); /* 입력 요소를 n배 확대 */
+  cursor: pointer;
+}
+
+.todo input:checked {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.todo-remove {
+  position: absolute;
+  right: 20px; 
+  top: 50%;
+  transform: translateY(-50%); /* 요소를 수직 중앙에 배치 */
+  margin-top: 2px;
+}
+
+.todo-modify {
+  position: absolute;
+  right: 60px; 
+  top: 50%;
+  transform: translateY(-50%); /* 요소를 수직 중앙에 배치 */
+  margin-top: 2px;
+}
+
+.modify-input {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50%;
+  outline: none;
+  border: none;
+  height: 26px;
+  margin-top: 3px;
+  margin-left: 60px;
+}
+
+.fa-pen:hover {
+  color: #858585;
+}
+
+.fa-circle-xmark:hover {
+  color: #858585;
+}
+
+.select-locate {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: "Do Hyeon", sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+  text-align: center;
+  outline: none;
+  border-radius: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-bottom: 3px;
+}
+
+.select-locate:hover {
+  box-shadow: 3px 3px 15px rgba(255, 255, 255, 0.3);
+}
+
+.select-locate option {
+  color: black;
+  height: 80px;
+  overflow-y: auto;
+}
+
+.location-time {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 33%;
+  height: 100%;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.location-one {
+  position: relative;
+  display: flex;
+  height: 33.3%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-icon {
+  font-size: 80px;
+}
+
+.temperature {
+  margin-left: 20px;
+  font-size: 30px;
+}
+
+.month-day {
+  font-size: 20px;
+  font-family: "Do Hyeon", sans-serif;
+}
+
+.local {
+  font-size: 24px;
+  font-family: "Do Hyeon", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.local-time {
+  font-size: 26px;
+  font-family: "Do Hyeon", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.location-two {
+  position: relative;
+  height: 33.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.location-three {
+  position: relative;
+  height: 33.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  height: 10%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.display-none {
+  display: none;
+}
