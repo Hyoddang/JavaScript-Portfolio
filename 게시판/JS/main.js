@@ -10,7 +10,9 @@ Todo
 
 /*
 !실행해야할 사항
-1. 
+1. 컨텐츠 추가모달 오류 모달창 띄우기
+2. 삭제 모달 함수 취소 이벤트 추가
+3. 
 */
 
 //? 모달 관련 요소
@@ -19,6 +21,7 @@ const modalOffAndSubmit = document.querySelector(".submit-btn");
 const modalOffCancel = document.querySelector(".cancel-btn");
 const modalOnAdd = document.querySelector(".add-btn");
 const removeModalDisplay = document.querySelector(".modal-alert-display");
+const windowWrap = document.querySelector(".wrap");
 
 //? 입력 관련 요소
 const inputTitle = document.querySelector(".title");
@@ -103,8 +106,8 @@ function notifyRemove() {
 
 //* 체크아이콘 클릭 시 삭제모달 활성화
 function notifyRemoveModalDisplay() {
+  // hidden 클래스가 있을 경우에만 제거
   if (removeModalDisplay && removeModalDisplay.classList.contains("hidden")) {
-    // hidden 클래스가 있을 경우에만 제거
     removeModalDisplay.classList.remove("hidden");
   }
 }

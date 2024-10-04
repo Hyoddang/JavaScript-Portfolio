@@ -34,11 +34,9 @@ function modalBtnHandler(e) {
     content: newNotifyContent,
     id: Date.now(),
   };
-  // location.reload();
   notifys.push(notifyObj);
   modalNotifyAdd(notifyObj);
   modalDisplayOff(e);
-  // toggleCheckBoxes();
   saveNotifys();
   location.reload();
 }
