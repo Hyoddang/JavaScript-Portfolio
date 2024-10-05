@@ -34,6 +34,8 @@ const notifyWrap = document.querySelector(".notify-wrap");
 const plusBtn = document.querySelector(".fa-plus");
 const checkBtn = document.querySelector(".fa-check");
 const removeOk = document.querySelector(".remove-agree");
+const removeCancel = document.querySelector(".remove-cancel");
+const modalCancel = document.querySelector(".modal-cancel");
 
 
 let notifys = [];
@@ -136,6 +138,14 @@ function notifyReomveBtnChange() {
   }
 }
 
+function removeCancelBtn() {
+  removeModalDisplay.classList.add("hidden");
+}
+
+function modalCancelBtn() {
+  removeModalDisplay.classList.add("hidden");
+}
+
 //* 체크박스를 취소하는 버튼 핸들러
 function xBtnClickHandler() {
   const removeCheckBoxes = document.querySelectorAll(".remove-checkbox");
@@ -167,6 +177,8 @@ function addCheckboxEventListeners() {
 plusBtn.addEventListener("click", xBtnClickHandler);
 modalRemoveBtn.addEventListener("click", toggleCheckBoxes);
 removeOk.addEventListener("click", notifyRemove);
+removeCancel.addEventListener("click", removeCancelBtn);
+modalCancel.addEventListener("click", modalCancelBtn);
 
 //* 이벤트 위임 방식으로 이벤트 리스너 설정
 document.addEventListener("click", (e) => {

@@ -215,7 +215,7 @@ button {
   margin: 20px 0 0 0;
 }
 
-.modal-cancle {
+.modal-cancel {
   position: absolute;
   top: 2%;
   right: 2%;
@@ -226,19 +226,19 @@ button {
   margin: 0;
 }
 
-.modal-cancle .fa-xmark {
+.modal-cancel .fa-xmark {
   font-size: 14px;
 }
 
-.modal-cancle:hover {
+.modal-cancel:hover {
   background-color: rgb(120, 120, 120);
 }
 
-.modal-cancle:active {
+.modal-cancel:active {
   background-color: rgb(80, 80, 80);
 }
 
-.remove-agree, .remove-cancle {
+.remove-agree, .remove-cancel {
   border: 1px solid black;
   border-radius: 3px;
   color: white;
@@ -257,15 +257,15 @@ button {
   background-color: rgb(80, 80, 80);
 }
 
-.remove-cancle {
+.remove-cancel {
   margin-left: 10px;
 }
 
-.remove-cancle:hover {
+.remove-cancel:hover {
   background-color: rgb(110, 110, 110);
 }
 
-.remove-cancle:active {
+.remove-cancel:active {
   background-color: rgb(80, 80, 80);
 }
 
