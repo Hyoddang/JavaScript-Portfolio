@@ -11,7 +11,7 @@ Todo
 /*
 !실행해야할 사항
 1. 컨텐츠 추가모달 오류 모달창 띄우기
-2. 삭제 모달 함수 취소 이벤트 추가
+2. 
 3. 
 */
 
@@ -22,6 +22,8 @@ const modalOffCancel = document.querySelector(".cancel-btn");
 const modalOnAdd = document.querySelector(".add-btn");
 const removeModalDisplay = document.querySelector(".modal-alert-display");
 const windowWrap = document.querySelector(".wrap");
+const contentAddError = document.querySelector(".content-add-error")
+const contentAddConfirm = document.querySelector(".content-add-confirm");
 
 //? 입력 관련 요소
 const inputTitle = document.querySelector(".title");
@@ -36,6 +38,8 @@ const checkBtn = document.querySelector(".fa-check");
 const removeOk = document.querySelector(".remove-agree");
 const removeCancel = document.querySelector(".remove-cancel");
 const modalCancel = document.querySelector(".modal-cancel");
+const contentAddErrorOk = document.querySelector(".content-add-error-ok");
+const contentAddErrorCancel = document.querySelector(".modal-cancel");
 
 
 let notifys = [];
@@ -47,11 +51,11 @@ function saveNotifys() {
 
 // HTML 추가
 function modalNotifyAdd(newNotify) {
-  notifyWrap.innerHTML += `<a href="" class="notify-list-link" id="${newNotify.id}"><li class="notify-list">
+  notifyWrap.innerHTML += `<div href="" class="notify-list-link" id="${newNotify.id}"><li class="notify-list">
   <input type="checkbox" class="remove-checkbox hidden-check">
   <p class="display-title">${newNotify.title}</p>
   <p class="display-content">${newNotify.content}</p>
-  </li></a>`
+  </li></div>`
 
   addCheckboxEventListeners()
 }

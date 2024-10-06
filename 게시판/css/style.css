@@ -296,6 +296,7 @@ button {
 .content-add-confirm {
   text-align: center;
   margin: 20px 0 0 0;
+  font-size: 15px;
 }
 
 .content-add-error-ok {
