@@ -149,7 +149,7 @@ button {
   border: 1px solid black;
 }
 
-.modal-wrap p {
+.input-name-title, .input-name-content {
   margin: 10px 25px 0;
   font-weight: 600;
 
@@ -297,6 +297,8 @@ button {
   text-align: center;
   margin: 20px 0 0 0;
   font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
 }
 
 .content-add-error-ok {
