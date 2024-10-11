@@ -37,6 +37,7 @@ h1 {
   transform: scale(1);
   -webkit-transition: 0.15s ease-in-out;
   transition: 0.15s ease-in-out;
+  cursor: pointer;
 }
 
 .notify-list-link:hover {
