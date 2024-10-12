@@ -14,10 +14,13 @@ const removeModalDisplay = document.querySelector(".modal-alert-display");
 const windowWrap = document.querySelector(".wrap");
 const contentAddError = document.querySelector(".content-add-error")
 const contentAddConfirm = document.querySelector(".content-add-confirm");
+const contentClick = document.querySelector(".notify-list-link");
+const contentShowModal = document.querySelector(".content-modal-background");
 
 //? 입력 관련 요소
 const inputTitle = document.querySelector(".title");
 const inputContent = document.querySelector(".content");
+const 
 
 //? 알림 목록 및 버튼
 const modalRemoveBtn = document.querySelector(".fa-trash-can");
@@ -48,6 +51,10 @@ function modalNotifyAdd(newNotify) {
   </li></div>`
 
   addCheckboxEventListeners()
+}
+
+function contentClickEvent() {
+  
 }
 
 //* 체크박스 숨김/표시 및 아이콘 변경 로직

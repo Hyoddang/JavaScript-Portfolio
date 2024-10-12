@@ -45,7 +45,6 @@ function modalBtnHandler(e) {
   location.reload();
 }
 
-
 function contentAddmodalOkBtn() {
   contentAddError.classList.add("hidden");
 }

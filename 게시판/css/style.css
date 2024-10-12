@@ -150,6 +150,70 @@ button {
   border: 1px solid black;
 }
 
+/* 컨텐츠 모달 스타일링 */
+.content-modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000007c;
+}
+
+.content-modal {
+  position: absolute;
+  top: 20%;
+  left: 38%;
+  width: 460px;
+  height: 500px;
+  background-color: #eee;
+  border: 1px solid black;
+}
+
+.content-modal-title, .content-modal-content {
+  margin: 10px 25px 0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.content-title {
+  margin: 3px 25px 0 ;
+  padding: 4px 5px;
+  width: 410px;
+  height: 30px;
+  background-color: #ffffff;
+  font-weight: bold;
+  border: 1px solid rgb(200, 200, 200);
+}
+
+.content-contents {
+  margin: 5px 25px 0;
+  width: 410px;
+  height: 320px;
+  background-color: #ffffff;
+  border: 1px solid rgb(200, 200, 200);
+  overflow-x: hidden;
+  word-break: break-all;
+}
+
+.content-modal-btn-wrap {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.content-modal-ok-btn {
+  background-color: #ffffff;
+  border: 1px solid black;
+  text-align: center;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+
+.content-modal-ok-btn:hover {
+  background-color: #707070;
+  color: #ffffff;
+}
+
 .input-name-title, .input-name-content {
   margin: 10px 25px 0;
   font-weight: 600;
