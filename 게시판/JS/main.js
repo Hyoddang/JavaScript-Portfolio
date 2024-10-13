@@ -20,7 +20,8 @@ const contentShowModal = document.querySelector(".content-modal-background");
 //? 입력 관련 요소
 const inputTitle = document.querySelector(".title");
 const inputContent = document.querySelector(".content");
-const 
+const title = document.querySelector(".content-title")
+const contents = document.querySelector(".content-contents")
 
 //? 알림 목록 및 버튼
 const modalRemoveBtn = document.querySelector(".fa-trash-can");
@@ -33,6 +34,7 @@ const removeCancel = document.querySelector(".remove-cancel");
 const modalCancel = document.querySelector(".modal-cancel");
 const contentAddErrorOk = document.querySelector(".content-add-error-ok");
 const contentAddErrorCancel = document.querySelector(".modal-cancel");
+const contentModalOkayBtn = document.querySelector(".content-modal-ok-btn");
 
 
 let notifys = [];
@@ -53,8 +55,14 @@ function modalNotifyAdd(newNotify) {
   addCheckboxEventListeners()
 }
 
-function contentClickEvent() {
-  
+function contentClickEvent(notifyContent) {
+  contentShowModal.classList.remove("hidden");
+  title.innerHTML = notifyContent.title
+  contents.innerHTML = notifyContent.content
+}
+
+function contentModalHiddenEvent() {
+  contentShowModal.classList.add("hidden");
 }
 
 //* 체크박스 숨김/표시 및 아이콘 변경 로직
@@ -180,6 +188,8 @@ modalRemoveBtn.addEventListener("click", toggleCheckBoxes);
 removeOk.addEventListener("click", notifyRemove);
 removeCancel.addEventListener("click", removeCancelBtn);
 modalCancel.addEventListener("click", modalCancelBtn);
+contentModalOkayBtn.addEventListener("click", contentModalHiddenEvent)
+
 
 //* 이벤트 위임 방식으로 이벤트 리스너 설정
 document.addEventListener("click", (e) => {
