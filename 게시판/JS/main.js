@@ -55,6 +55,7 @@ function modalNotifyAdd(newNotify) {
   addCheckboxEventListeners()
 }
 
+//! 수정 필요
 function contentClickEvent(notifyContent) {
   contentShowModal.classList.remove("hidden");
   title.innerHTML = notifyContent.title
@@ -189,7 +190,7 @@ removeOk.addEventListener("click", notifyRemove);
 removeCancel.addEventListener("click", removeCancelBtn);
 modalCancel.addEventListener("click", modalCancelBtn);
 contentModalOkayBtn.addEventListener("click", contentModalHiddenEvent)
-
+//! 모달 버튼에 오류가 생김 수정필요
 
 //* 이벤트 위임 방식으로 이벤트 리스너 설정
 document.addEventListener("click", (e) => {
