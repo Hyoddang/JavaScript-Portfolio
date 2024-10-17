@@ -4,7 +4,6 @@ Todo
 2. 컨텐츠 클릭 시 모달창 띄우며 내용 보여주기
 
 */
-
 //? 모달 관련 요소
 const modalDisplay = document.querySelector(".modal-wrap");
 const modalOffAndSubmit = document.querySelector(".submit-btn");
@@ -58,8 +57,6 @@ function modalNotifyAdd(newNotify) {
 //! 수정 필요
 function contentClickEvent(notifyContent) {
   contentShowModal.classList.remove("hidden");
-  title.innerHTML = notifyContent.title
-  contents.innerHTML = notifyContent.content
 }
 
 function contentModalHiddenEvent() {
@@ -191,6 +188,9 @@ removeCancel.addEventListener("click", removeCancelBtn);
 modalCancel.addEventListener("click", modalCancelBtn);
 contentModalOkayBtn.addEventListener("click", contentModalHiddenEvent)
 //! 모달 버튼에 오류가 생김 수정필요
+document.addEventListener("DOMContentLoaded", () => {
+  contentClick.addEventListener("click", contentClickEvent)
+})
 
 //* 이벤트 위임 방식으로 이벤트 리스너 설정
 document.addEventListener("click", (e) => {
