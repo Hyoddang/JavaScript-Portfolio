@@ -55,8 +55,21 @@ function modalNotifyAdd(newNotify) {
 }
 
 //! 수정 필요
-function contentClickEvent(notifyContent) {
-  contentShowModal.classList.remove("hidden");
+function contentClickEvent(e) {
+  const targetNotify = e.target.closest(".notify-list-link");
+  
+  if (!targetNotify) return;
+  
+  // 리스트 항목의 ID 추출
+  const notifyId = targetNotify.id;
+  // 해당 ID의 알림 찾기
+  const notifyItem = notifys.find(notify => notify.id === parseInt(notifyId));
+  
+  if (notifyItem) {
+    contentShowModal.classList.remove("hidden");
+    title.textContent = notifyItem.title;
+    contents.textContent = notifyItem.content;
+  }
 }
 
 function contentModalHiddenEvent() {
@@ -189,8 +202,15 @@ modalCancel.addEventListener("click", modalCancelBtn);
 contentModalOkayBtn.addEventListener("click", contentModalHiddenEvent)
 //! 모달 버튼에 오류가 생김 수정필요
 document.addEventListener("DOMContentLoaded", () => {
-  contentClick.addEventListener("click", contentClickEvent)
-})
+  const notifyWrap = document.querySelector(".notify-wrap");
+  
+  // 부모 요소에 이벤트 리스너 추가
+  notifyWrap.addEventListener("click", (e) => {
+    if (e.target.closest(".notify-list-link")) {
+      contentClickEvent(e); // notify-list-link에서 이벤트 처리
+    }
+  });
+});
 
 //* 이벤트 위임 방식으로 이벤트 리스너 설정
 document.addEventListener("click", (e) => {
