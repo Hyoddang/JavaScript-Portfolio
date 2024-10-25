@@ -89,6 +89,7 @@ h1 {
 .content-wrap-footer {
   display: flex;
   margin-top: 2%;
+  margin-left: 0;
 }
 
 .pagination-wrap {
