@@ -1,7 +1,6 @@
 /*
 Todo
-1. 페이지네이션 기능 추가
-2. 컨텐츠 클릭 시 모달창 띄우며 내용 보여주기
+1. 수정 버튼 추가
 
 */
 //? 모달 관련 요소
@@ -54,7 +53,6 @@ function modalNotifyAdd(newNotify) {
   addCheckboxEventListeners()
 }
 
-//! 수정 필요
 function contentClickEvent(e) {
   const targetNotify = e.target.closest(".notify-list-link");
   

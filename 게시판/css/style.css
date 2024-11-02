@@ -102,12 +102,43 @@ h1 {
   gap: 3px;
 }
 
+.prev-btn {
+  margin-left: 3px;
+  cursor: pointer;
+}
+
+.prev-btn:hover {
+  color: #707070;
+}
+
+.first-btn:hover {
+  color: #707070;
+  cursor: pointer;
+}
+
+.next-btn {
+  margin-right: 3px;
+  cursor: pointer;
+}
+
+.next-btn:hover {
+  color: #707070;
+}
+
+.last-btn:hover {
+  color: #707070;
+  cursor: pointer;
+}
+
 .pagination-num-wrap {
+  margin: 0 3px;
   text-align: center;
+  cursor: pointer;
 }
 
 .pagination-num {
   white-space: nowrap;
+  margin: 0 2px;
 }
 
 /*? 추가, 삭제버튼 스타일 영역 */
