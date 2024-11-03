@@ -16,13 +16,14 @@ function pagination() {
     const end = start + COUNT_DISPLAY_PAGE;
     const itemsToDisplay = notifys.slice(start, end);
 
-    displayItems(itemsToDisplay); // 아이템을 렌더링하는 함수 호출
-    updatePaginationButtons(); // 페이지네이션 버튼 업데이트
+    displayItems(itemsToDisplay);
+    updatePaginationButtons();
   }
 
   // 페이지네이션 버튼을 업데이트하는 함수
   function updatePaginationButtons() {
-    paginationBtnWrap.innerHTML = ""; // 기존 버튼 초기화
+    // 기존 버튼 초기화
+    paginationBtnWrap.innerHTML = "";
   
     for (let i = 1; i <= totalPage; i++) {
       const span = document.createElement("span");
@@ -30,7 +31,7 @@ function pagination() {
       span.classList.add("pagination-num");
   
       if (i === currentPage) {
-        span.classList.add("active"); // 현재 페이지에 활성 클래스 추가
+        span.classList.add("active");
       }
   
       // 클릭 이벤트 리스너 추가
@@ -89,16 +90,16 @@ function pagination() {
 }
 
 // 아이템을 렌더링하는 함수
-function displayItems(items) {
+function displayItems(notifys) {
   const container = document.querySelector(".notify-wrap");
 
   container.innerHTML = "";
-  items.forEach(item => {
-    container.innerHTML += `<div href="" class="notify-list-link" id="${item.id}">
+  notifys.forEach(notify => {
+    container.innerHTML += `<div href="" class="notify-list-link" id="${notify.id}">
       <li class="notify-list">
         <input type="checkbox" class="remove-checkbox hidden-check">
-        <p class="display-title">${item.title}</p>
-        <p class="display-content">${item.content}</p>
+        <p class="display-title">${notify.title}</p>
+        <p class="display-content">${notify.content}</p>
       </li>
     </div>`;
   });
