@@ -29,11 +29,10 @@ const plusBtn = document.querySelector(".fa-plus");
 const checkBtn = document.querySelector(".fa-check");
 const removeOk = document.querySelector(".remove-agree");
 const removeCancel = document.querySelector(".remove-cancel");
-const modalCancel = document.querySelector(".modal-cancel");
+const modalCancel = document.querySelector(".xBtn");
 const contentAddErrorOk = document.querySelector(".content-add-error-ok");
 const contentAddErrorCancel = document.querySelector(".modal-cancel");
 const contentModalOkayBtn = document.querySelector(".content-modal-ok-btn");
-
 
 let notifys = [];
 
@@ -60,7 +59,7 @@ function contentClickEvent(e) {
   
   // 리스트 항목의 ID 추출
   const notifyId = targetNotify.id;
-  // 해당 ID의 알림 찾기
+  // 해당 ID의 컨텐츠 찾기
   const notifyItem = notifys.find(notify => notify.id === parseInt(notifyId));
   
   if (notifyItem) {
@@ -160,10 +159,6 @@ function removeCancelBtn() {
   removeModalDisplay.classList.add("hidden");
 }
 
-function modalCancelBtn() {
-  removeModalDisplay.classList.add("hidden");
-}
-
 //* 체크박스를 취소하는 버튼 핸들러
 function xBtnClickHandler() {
   const removeCheckBoxes = document.querySelectorAll(".remove-checkbox");
@@ -196,8 +191,7 @@ plusBtn.addEventListener("click", xBtnClickHandler);
 modalRemoveBtn.addEventListener("click", toggleCheckBoxes);
 removeOk.addEventListener("click", notifyRemove);
 removeCancel.addEventListener("click", removeCancelBtn);
-modalCancel.addEventListener("click", modalCancelBtn);
-contentModalOkayBtn.addEventListener("click", contentModalHiddenEvent)
+contentModalOkayBtn.addEventListener("click", contentModalHiddenEvent);
 //! 모달 버튼에 오류가 생김 수정필요
 document.addEventListener("DOMContentLoaded", () => {
   const notifyWrap = document.querySelector(".notify-wrap");

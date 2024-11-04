@@ -103,7 +103,6 @@ function displayItems(notifys) {
       </li>
     </div>`;
   });
-
   addCheckboxEventListeners();
   notifyReomveBtnChange();
 }

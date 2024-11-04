@@ -133,12 +133,14 @@ h1 {
 .pagination-num-wrap {
   margin: 0 3px;
   text-align: center;
-  cursor: pointer;
 }
 
 .pagination-num {
   white-space: nowrap;
-  margin: 0 2px;
+  cursor: pointer;
+  margin: 0 1px;
+  /* margin만 쓰면 클릭 범위가 좁음 */
+  padding: 0 2px; 
 }
 
 .active {
