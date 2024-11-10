@@ -1,0 +1,39 @@
+element {
+  --main-text-color: black;
+  --white-text-color: white;
+}
+
+/*? nav section */
+.logo {
+
+}
+
+.blog-icons-wrap {
+  cursor: default;
+}
+
+.github {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+}
+
+.github-site {
+  width: 100%;
+  height: 100%;
+}
+
+.notion-blog {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+}
+
+.notion {
+  width: 100%;
+  height: 100%;
+}
+
+/*? main section */
+
+/*? footer section */
