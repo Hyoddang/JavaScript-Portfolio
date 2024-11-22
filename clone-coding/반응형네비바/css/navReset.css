@@ -6,8 +6,8 @@
 }
 
 html, body {
-  height: 100%;
-  width: 100%;
+  /** 텍스트 드래그 방지 */
+  user-select:none
 }
 
 h1, h2, h3, h4, a {

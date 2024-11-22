@@ -5,14 +5,16 @@
   font-style: normal;
 }
 
+/* 전체 폰트 지정 */
 * {
   font-family: 'GangwonEduPowerExtraBoldA';
 }
 
+/* 헤더(네비바) 영역 */
 .blog-header {
-  position: relative;
-  height: 10%;
-  width: 100%;
+  padding: 10px 0;
+  background-color: #cacaca;
+  height: auto;
 }
 
 .logo-wrap {
@@ -23,30 +25,44 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #cacaca;
   height: 100%;
+}
+
+.blog-nav {
+  display: flex;
+  height: 100%;
+  width: 50%;
 }
 
 .nav-wrap {
   display: flex;
   justify-content: space-around;
-  gap: 25px;
+  align-items: center;
   width: 100%;
   height: 100%;
-  align-items: center;
-  padding-top: 5px;
+}
+
+.nav-link {
+  text-align: center;
+  font-size: 18px;
+  padding: 0 30px;
+  height: 100%;
+  transition: 0.15s ease-in-out;
+  flex: 1;
+  white-space: nowrap;
+  line-height: 1.5;
 }
 
 .nav-list {
-  position: relative;
-  text-align: center;
-  font-size: 18px;
-  padding: 0 20px;
   height: 100%;
 }
 
-.nav-content {
-  
+.nav-link:hover {
+  background-color: #757575;
+}
+
+.nav-link:hover span {
+  color: white;
 }
 
 .blog-icons-wrap {
@@ -59,4 +75,24 @@
   margin: 0;
   width: 32px;
   height: 32px;
+  transition: 0.15s ease-in-out;
 }
+
+.github-site:hover, .notion:hover {  
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 856px) {
+  .blog-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-wrap {
+    flex-direction: column;
+  }
+}
+
+/* 메인 영역 */
+
+/* 푸터 영역 */
