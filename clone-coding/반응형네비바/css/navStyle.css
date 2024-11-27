@@ -12,9 +12,13 @@
 
 /* 헤더(네비바) 영역 */
 .blog-header {
-  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-color: #cacaca;
+  width: 100%;
   height: auto;
+  min-height: 60px;
 }
 
 .logo-wrap {
@@ -25,13 +29,14 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100%;
+  min-height: 100%;
+  width: 100%;
 }
 
 .blog-nav {
   display: flex;
   height: 100%;
-  width: 50%;
+  width: auto;
 }
 
 .nav-wrap {
@@ -45,16 +50,17 @@
 .nav-link {
   text-align: center;
   font-size: 18px;
-  padding: 0 30px;
+  padding: 19px 30px;
   height: 100%;
-  transition: 0.15s ease-in-out;
   flex: 1;
   white-space: nowrap;
-  line-height: 1.5;
+  transition: 0.15s ease-in-out;
+  border-radius: 5px;
 }
 
 .nav-list {
   height: 100%;
+  padding-top: 3px;
 }
 
 .nav-link:hover {
@@ -63,6 +69,10 @@
 
 .nav-link:hover span {
   color: white;
+}
+
+.nav-content {
+
 }
 
 .blog-icons-wrap {
@@ -82,7 +92,7 @@
   transform: scale(1.2);
 }
 
-@media screen and (max-width: 856px) {
+@media screen and (max-width: 768px) {
   .blog-header {
     flex-direction: column;
     align-items: flex-start;
@@ -91,8 +101,13 @@
   .nav-wrap {
     flex-direction: column;
   }
+
+  .nav-link {
+    width: 100%;
+  }
 }
 
 /* 메인 영역 */
+
 
 /* 푸터 영역 */
