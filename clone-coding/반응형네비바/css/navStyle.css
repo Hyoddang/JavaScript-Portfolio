@@ -71,10 +71,6 @@
   color: #eee;
 }
 
-.nav-content {
-
-}
-
 .blog-icons-wrap {
   display: flex;
   gap: 20px;
@@ -95,9 +91,9 @@
 .nav-burger-bars {
   display: none;
   position: absolute;
-  top: 2%;
+  top: 2.5%;
   right: 3%;
-  font-size: 20px;
+  font-size: 26px;
   transition: 0.15s ease-in-out;
 }
 
@@ -112,6 +108,8 @@
 
   .blog-logo {
     padding-left: 15px;
+    padding-top: 5px;
+    min-height: 60px;
   }
 
   .header-container {
@@ -120,6 +118,7 @@
   }
 
   .blog-nav {
+    display: none;
     width: 100%;
     text-align: center;
   }
@@ -136,7 +135,7 @@
   }
 
   .blog-icons-wrap {
-    display: flex;
+    display: none;
     justify-content: center;
     width: 100%;
     padding: 3px 0;
@@ -150,7 +149,13 @@
   .nav-burger-bars {
     display: block;
   }
+
+  .blog-nav.active,
+  .blog-icons-wrap.active {
+    display: flex;
+  }
 }
+
 
 /* 메인 영역 */
 
