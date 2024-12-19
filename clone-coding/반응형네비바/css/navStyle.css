@@ -13,6 +13,7 @@
 /* 헤더(네비바) 영역 */
 .blog-header {
   display: flex;
+  position: fixed;
   justify-content: space-around;
   align-items: center;
   background-color: #cacaca;
@@ -91,7 +92,7 @@
 .nav-burger-bars {
   display: none;
   position: absolute;
-  top: 2.5%;
+  top: 0%;
   right: 3%;
   font-size: 26px;
   transition: 0.15s ease-in-out;
@@ -147,6 +148,7 @@
   }
 
   .nav-burger-bars {
+    margin-top: 15px;
     display: block;
   }
 
@@ -156,8 +158,52 @@
   }
 }
 
-
 /* 메인 영역 */
+.main {
+  
 
+
+}
+
+.home-wrap {
+  background-color: #27374D;
+  height: 100vh;
+}
+
+.home-content-wrap {
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  left: 41%;
+}
+
+.home-content-wrap .material-symbols-outlined {
+  color: white;
+  font-size: 10rem;
+}
+
+.typing-text, .main-link, .fa-arrow-right {
+  color: white;
+}
+
+.typing-text {
+  font-size: 2rem;
+}
+
+.main-link-text {
+  /* display: block; */
+  position: relative;
+  font-size: 1.5rem;
+  height: auto;
+}
+
+.main-link {
+  display: inline-block;
+  height: 100%;
+}
+
+.main-link:hover {
+  text-decoration: underline;
+}
 
 /* 푸터 영역 */
