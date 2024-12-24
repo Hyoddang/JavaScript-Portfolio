@@ -187,11 +187,11 @@
 }
 
 .typing-text {
+  position: relative;
   font-size: 2rem;
 }
 
 .main-link-text {
-  /* display: block; */
   position: relative;
   font-size: 1.5rem;
   height: auto;
@@ -204,6 +204,25 @@
 
 .main-link:hover {
   text-decoration: underline;
+}
+
+.typing-text::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  width: 4px;
+  height: 90%;
+  background-color: white;
+}
+
+.typing-text.active::after {
+  display: none;
+}
+
+#typing {
+  display: inline-block;
 }
 
 /* 푸터 영역 */
