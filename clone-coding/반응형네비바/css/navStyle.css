@@ -173,8 +173,9 @@
 .home-content-wrap {
   position: absolute;
   text-align: center;
-  top: 40%;
-  left: 41%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .home-content-wrap .material-symbols-outlined {
