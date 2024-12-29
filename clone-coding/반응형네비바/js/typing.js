@@ -1,16 +1,16 @@
-let text = document.querySelector("#typing");
+let text = document.querySelector(".typing-text");
 
 // 깜박임 효과
 function blink() {
   text.classList.toggle("active")
 }
-
 setInterval(blink, 500)
 
+// 타이핑 효과
 function stringArr() {
   let strArr = ["Welcome to my page :)"];
-  let effectArr = []
-  let typingShift = strArr.shift("");
+  let selectStr = strArr[0]
+  let typingShift = selectStr.split("");
 
   return typingShift;
 }
@@ -30,3 +30,5 @@ function typing(strArr) {
     setTimeout(resetTyping, 3000);
   }
 }
+
+typing(stringArr());
