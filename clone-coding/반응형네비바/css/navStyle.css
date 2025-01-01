@@ -20,6 +20,7 @@
   width: 100%;
   height: auto;
   min-height: 60px;
+  z-index: 99;
 }
 
 .logo-wrap {
@@ -161,8 +162,6 @@
 /* 메인 영역 */
 .main {
   
-
-
 }
 
 .home-wrap {
@@ -224,6 +223,21 @@
 
 #typing {
   display: inline-block;
+}
+
+.aboutMe-wrap {
+  height: 100vh;
+  background-color: #757575;
+}
+
+.pj-sk-wrap {
+  height: 100vh;
+  background-color: #b8d8ce;
+}
+
+.contact-wrap {
+  height: 100vh;
+  background-color: #cacaca;
 }
 
 /* 푸터 영역 */
