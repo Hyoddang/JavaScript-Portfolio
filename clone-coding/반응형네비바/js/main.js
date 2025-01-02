@@ -7,4 +7,5 @@ function toggleNavBtn() {
   navIcons.classList.toggle('active');
 }
 
+
 burgerBtn.addEventListener('click', toggleNavBtn);

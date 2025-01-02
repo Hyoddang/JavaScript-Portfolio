@@ -164,9 +164,15 @@
   
 }
 
+#home, #aboutMe, #pj-sk, #contact {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
 .home-wrap {
   background-color: #27374D;
-  height: 100vh;
+  z-index: 1;
 }
 
 .home-content-wrap {
@@ -206,6 +212,10 @@
   text-decoration: underline;
 }
 
+.fa-arrow-right {
+  margin-left: 5gpx;
+}
+
 .typing-text::after {
   content: "";
   display: block;
@@ -226,18 +236,28 @@
 }
 
 .aboutMe-wrap {
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #757575;
+  z-index: 2;
 }
 
 .pj-sk-wrap {
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #b8d8ce;
+  z-index: 3;
 }
 
 .contact-wrap {
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #cacaca;
+  z-index: 4;
 }
+
 
 /* 푸터 영역 */
