@@ -16,10 +16,6 @@
   margin-top: 10px;
 }
 
-.asan-navWrap {
-  
-}
-
 .asan-navWrap .asan-navList {
   float: left;
   margin-left: 50px;
@@ -28,8 +24,9 @@
 }
 
 .carousel-list-wrap .cell {
-  float: left;
   display: flex;
   justify-content: center;
   width: 100%;
 }
+
+/* 반응형 스타일 영역 */
