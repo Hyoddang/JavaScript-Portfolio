@@ -29,4 +29,15 @@
   width: 100%;
 }
 
+.carousel {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.carousel-list-wrap {
+  display: flex;
+}
+
 /* 반응형 스타일 영역 */
+
