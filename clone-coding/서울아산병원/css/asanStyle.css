@@ -39,5 +39,56 @@
   display: flex;
 }
 
+.search-section {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(37, 170, 170);
+  text-align: center;
+  position: relative;
+}
+
+.search-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.search-text {
+  color: white;
+  margin-right: 15px;
+  font-size: 16px;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.input {
+  width: 550px;
+  height: 50px;
+  border-radius: 50px;
+  padding: 0 60px 0 30px;
+  border: none;
+  outline: none;
+}
+
+.search-btn {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.fa-magnifying-glass {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
 /* 반응형 스타일 영역 */
 

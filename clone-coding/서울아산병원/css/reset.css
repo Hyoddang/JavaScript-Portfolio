@@ -25,3 +25,10 @@ h1, h2, h3, h4, h5, a, ul, li {
 ul, li, ol {
   list-style-type: none;
 }
+
+span {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-use-select: none;
+  user-select: none;
+}
