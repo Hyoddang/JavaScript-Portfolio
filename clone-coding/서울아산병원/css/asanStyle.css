@@ -118,6 +118,111 @@
   cursor: pointer;
 }
 
+.main-wrap {
+  padding-top: 70px;
+  width: 100%;
+  position: relative;
+}
+
+.main-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+
+.service-wrap {
+  text-align: center;
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  max-height: 200px;
+  position: relative;
+  border: 1px solid #cfcfcf;
+  border-radius: 15px;
+  background-color: #f0f0f0;
+  margin: 0 auto;
+}
+
+.service-list {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.service-list li {
+  display: inline-block;
+  /* margin: 0 10px; */
+  position: relative;
+}
+
+/*? 리스트 사이사이에 선을 추가하는 속성 */
+.service-list li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  width: 1px;
+  height: 60%;
+  background-color: #cfcfcf;
+  transform: translateY(-50%);
+}
+
+.service-list li a:hover {
+  text-decoration: underline;
+}
+
+.service-100 a {
+  display: block;
+  width: 200px;
+  height: 200px;
+  padding-top: 140px;
+  font-size: 18px;
+  font-weight: 600;
+  background: url('https://www.amc.seoul.kr/asan/images/mainNew/ico_serv_doc.png') no-repeat center center;
+}
+
+.service-101 a {
+  display: block;
+  width: 200px;
+  height: 200px;
+  padding-top: 140px;
+  font-size: 18px;
+  font-weight: 600;
+  background: url('	https://www.amc.seoul.kr/asan/images/mainNew/ico_serv_dept.png') no-repeat center center;
+}
+
+.service-102 a {
+  display: block;
+  width: 200px;
+  height: 200px;
+  padding-top: 140px;
+  font-size: 18px;
+  font-weight: 600;
+  background: url('https://www.amc.seoul.kr/asan/images/mainNew/ico_serv_resv.png') no-repeat center center;
+}
+
+.service-103 a {
+  display: block;
+  width: 200px;
+  height: 200px;
+  padding-top: 140px;
+  font-size: 18px;
+  font-weight: 600;
+  background: url('https://www.amc.seoul.kr/asan/images/mainNew/ico_serv_first.png') no-repeat center center;
+}
+
+.service-104 a {
+  display: block;
+  width: 200px;
+  height: 200px;
+  padding-top: 140px;
+  font-size: 18px;
+  font-weight: 600;
+  background: url('https://www.amc.seoul.kr/asan/images/mainNew/ico_serv_chart.png') no-repeat center center;
+}
+
+
 
 /* 반응형 스타일 영역 */
-
