@@ -119,9 +119,11 @@
 }
 
 .main-wrap {
-  padding-top: 70px;
+  padding: 70px 0;
   width: 100%;
+  height: auto;
   position: relative;
+  margin: 0 auto;
 }
 
 .main-title {
@@ -173,46 +175,10 @@
   text-decoration: underline;
 }
 
-.service-100 a {
-  display: block;
-  width: 200px;
-  height: 200px;
-  padding-top: 140px;
-  font-size: 18px;
-  font-weight: 600;
-  background: url('https://www.amc.seoul.kr/asan/images/mainNew/ico_serv_doc.png') no-repeat center center;
-}
-
-.service-101 a {
-  display: block;
-  width: 200px;
-  height: 200px;
-  padding-top: 140px;
-  font-size: 18px;
-  font-weight: 600;
-  background: url('	https://www.amc.seoul.kr/asan/images/mainNew/ico_serv_dept.png') no-repeat center center;
-}
-
-.service-102 a {
-  display: block;
-  width: 200px;
-  height: 200px;
-  padding-top: 140px;
-  font-size: 18px;
-  font-weight: 600;
-  background: url('https://www.amc.seoul.kr/asan/images/mainNew/ico_serv_resv.png') no-repeat center center;
-}
-
-.service-103 a {
-  display: block;
-  width: 200px;
-  height: 200px;
-  padding-top: 140px;
-  font-size: 18px;
-  font-weight: 600;
-  background: url('https://www.amc.seoul.kr/asan/images/mainNew/ico_serv_first.png') no-repeat center center;
-}
-
+.service-100 a,
+.service-101 a,
+.service-102 a,
+.service-103 a,
 .service-104 a {
   display: block;
   width: 200px;
@@ -220,9 +186,74 @@
   padding-top: 140px;
   font-size: 18px;
   font-weight: 600;
+}
+
+.service-100 a {
+  background: url('https://www.amc.seoul.kr/asan/images/mainNew/ico_serv_doc.png') no-repeat center center;
+}
+
+.service-101 a {
+  background: url('	https://www.amc.seoul.kr/asan/images/mainNew/ico_serv_dept.png') no-repeat center center;
+}
+
+.service-102 a {
+  background: url('https://www.amc.seoul.kr/asan/images/mainNew/ico_serv_resv.png') no-repeat center center;
+}
+
+.service-103 a {
+  background: url('https://www.amc.seoul.kr/asan/images/mainNew/ico_serv_first.png') no-repeat center center;
+}
+
+.service-104 a {
   background: url('https://www.amc.seoul.kr/asan/images/mainNew/ico_serv_chart.png') no-repeat center center;
 }
 
+.print-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px auto 0;
+  width: 100%;
+  max-width: 1100px;
+  text-align: center;
+}
+
+.print-wrap ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.print-wrap ul li {
+  text-align: center;
+}
+
+.print-wrap ul li a {
+  display: inline-block;
+  width: 350px;
+  height: 100%;
+  background-color: #e6f7f9;
+  font-weight: bold;
+  line-height: 80px;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.certification {
+  background-color: #d4f0f2;
+}
+
+.record {
+  background-color: #b4e1e3;
+}
+
+.consent {
+  background-color: #d4f0f2;
+}
 
 
 /* 반응형 스타일 영역 */
